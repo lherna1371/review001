@@ -1,0 +1,54 @@
+body {
+    background: #686868;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bt-white {
+    display: inline-block;
+    max-width: 25%;
+    background: whitesmoke;
+    border: 5px solid black;
+}
+
+/* redundant - no need to user another CSS rule to implement the same styling properties/values. Keep ".bt-white" above and use that as the main style for the bt-card elements */
+/* 
+.bt-colored {
+    display: inline-block;
+    max-width: 25%;
+    background: whitesmoke;
+    border: 5px solid black;
+} */
+
+
+/* Note: appended the ".bt-white" class name to the CSS selector as we want to limit the styling of the children h1, img, and a to those within the ".bt-white" element. Gives you the freedom/flexibility to set independent styles ot other h1, img, and a on your website.  */
+
+.bt-white h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    text-align: center;
+}
+
+.bt-white img {
+    width: 100%;
+    height: 250px;
+    border-top: 3px #000000 solid;
+    border-bottom: 3px #000000 solid;
+    margin: none;
+}
+
+.bt-white p {
+    font-family: 'Arial Narrow';
+    font-size: x-small;
+    text-align: justify;
+    padding: 5px;
+    background: lightgray;
+}
+
+.bt-white a {
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: small;
+    font-weight: 400;
+    color: blue;
+    text-align: center;
+}
